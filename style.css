@@ -1,0 +1,712 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e5e1d1;
+}
+
+.first {
+    background-image: url(images/body.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stayupp {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e5e1d1;
+    padding-right: 128px;
+    padding-left: 128px;
+    width: auto;
+    align-items: baseline;
+}
+
+.flex-container>div {
+    background-color: #e5e1d1;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.flex-container>div:hover {
+    text-decoration: underline;
+}
+
+.second {
+    margin-top: 0;
+    padding-top: 0;
+    top: 15px;
+    left: 128px;
+    width: 60px;
+    height: 60px;
+    background-color: #e5e1d1;
+}
+
+.second:hover {
+    background-color: #b9c12d;
+}
+
+.fa-facebook,
+.fa-search,
+.fa-instagram {
+    background: #e5e1d1;
+    color: black;
+    border-radius: 50%;
+}
+
+.flexli {
+    padding-top: 200px;
+}
+
+.flexli1 {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+
+}
+
+.flexli2 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000000;
+    list-style-type: none;
+    background-color: #e7e8e7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    padding: 10px 10px;
+    width: 500px;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.part2 {
+    display: block;
+    background-color: #e5e1d1;
+    padding-top: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+h2 {
+    padding-top: 30px;
+}
+
+/*part tow*/
+
+.middle {
+    background-color: white;
+    width: 100%;
+    height: 1150px;
+    text-align: center;
+}
+
+.middle h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-family: 'Verlag', sans-serif;
+    line-height: 1.4em;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.middle p {
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.view-port {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.scroll-left {
+    height: 50px;
+    width: 50px;
+    border: 1px solid transparent;
+    background-color: #c2bfb4;
+    position: absolute;
+    left: 20px;
+    top: 1350px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-left::before,
+.scroll-left::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 5px solid #e9e5d6;
+    height: 10px;
+    width: 10px;
+    transform: translate(-30%, 30%) rotate(45deg);
+    border-top: transparent;
+    border-right: transparent;
+    animation: scroll-left 1ms ease-in-out infinite;
+}
+
+.scroll-right {
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    background-color: #c2bfb4;
+    position: absolute;
+    right: 20px;
+    top: 1350px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-right::before,
+.scroll-right::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 5px solid #e9e5d6;
+    height: 10px;
+    width: 10px;
+    transform: translate(-40%, 30%) rotate(45deg);
+    border-bottom: transparent;
+    border-left: transparent;
+}
+
+.images-container {
+    width: 2800px;
+    height: 400px;
+}
+
+.images-container>div {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    float: left;
+    margin: 50px;
+    padding: 0;
+}
+
+.images-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.section1 li img {
+    list-style-type: none;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+}
+
+/*part two */
+
+.middle1 {
+    background-color: #b9c12d;
+    width: 100%;
+    height: 582px;
+    text-align: center;
+}
+
+.middle1 h1 {
+    padding-top: 50px;
+    text-transform: uppercase;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    font-family: 'Verlag', sans-serif;
+    letter-spacing: 0px;
+}
+
+.view-port1 {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.scroll-left1 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid transparent;
+    background-color: #c2bfb4;
+    position: absolute;
+    left: 20px;
+    top: 3100px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-left1::before,
+.scroll-left1::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 5px solid #e9e5d6;
+    height: 10px;
+    width: 10px;
+    transform: translate(-30%, 30%) rotate(45deg);
+    border-top: transparent;
+    border-right: transparent;
+}
+
+.scroll-right1 {
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    background-color: #c2bfb4;
+    position: absolute;
+    right: 20px;
+    top: 3100px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-right1::before,
+.scroll-right1::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 5px solid #e9e5d6;
+    height: 10px;
+    width: 10px;
+    transform: translate(-40%, 30%) rotate(45deg);
+    border-bottom: transparent;
+    border-left: transparent;
+}
+
+.svg-container {
+    width: 2100px;
+    height: 400px;
+}
+
+.svg-container>div {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    float: left;
+    margin: 50px;
+    padding: 0;
+}
+
+.svg-container a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.section2 li img {
+    list-style-type: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+}
+
+/*part three */
+.part3 {
+    display: block;
+    background-color: #e5e1d1;
+    padding-top: 50px;
+
+    font-family: 'Verlag', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.middle1 {
+    background-color: #b9c12d;
+    width: 100%;
+    height: 582px;
+    text-align: center;
+}
+
+.middle1 h1 {
+    padding-top: 50px;
+    text-transform: uppercase;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    font-family: 'Verlag', sans-serif;
+    letter-spacing: 0px;
+}
+
+.view-port2 {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.scroll-left2 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid transparent;
+    background-color: #c2bfb4;
+    position: absolute;
+    left: 20px;
+    top: 3750px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-left2::before,
+.scroll-left2::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 5px solid #e9e5d6;
+    height: 10px;
+    width: 10px;
+    transform: translate(-30%, 30%) rotate(45deg);
+    border-top: transparent;
+    border-right: transparent;
+}
+
+.scroll-right2 {
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    background-color: #c2bfb4;
+    position: absolute;
+    right: 20px;
+    top: 3750px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-right2::before,
+.scroll-right2::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 5px solid #e9e5d6;
+    height: 10px;
+    width: 10px;
+    transform: translate(-40%, 30%) rotate(45deg);
+    border-bottom: transparent;
+    border-left: transparent;
+}
+
+.photo-container {
+    width: 4500px;
+    height: 400px;
+}
+
+.photo-container>div {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    float: left;
+    margin: 50px;
+    padding: 0;
+}
+
+.photo-container a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.section3 li img {
+    list-style-type: none;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+}
+
+/*part four Karta*/
+.middle4 {
+    background-color: white;
+    width: 100%;
+    height: 1150px;
+    text-align: center;
+}
+
+.middle4 h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Verlag', sans-serif;
+}
+
+.middle4 p {
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+/*part five FÖR GRUPPER*/
+.part4 {
+    display: block;
+    background-color: #e5e1d1;
+    padding-top: 350px;
+    padding-bottom: 600px;
+    font-family: 'Verlag', sans-serif;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 582px;
+}
+
+.middle1 {
+    background-color: #b9c12d;
+    text-align: center;
+}
+
+.middle1 h1 {
+    padding-top: 50px;
+    text-transform: uppercase;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 48px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 800;
+    font-family: 'Verlag', sans-serif;
+    letter-spacing: 0px;
+}
+
+.view-port3 {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 1000px;
+    height: 500px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.scroll-left3 {
+    height: 50px;
+    width: 50px;
+    border: 1px solid transparent;
+    background-color: #c2bfb4;
+    position: absolute;
+    left: 20px;
+    top: 5830px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-left3.fa-instagram,
+.scroll-left3::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 5px solid #e9e5d6;
+    height: 10px;
+    width: 10px;
+    transform: translate(-30%, 30%) rotate(45deg);
+    border-top: transparent;
+    border-right: transparent;
+}
+
+.scroll-right3 {
+    height: 50px;
+    width: 50px;
+    border: 2px solid transparent;
+    background-color: #c2bfb4;
+    position: absolute;
+    right: 20px;
+    top: 5830px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-right3::before,
+.scroll-right3::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 5px solid #e9e5d6;
+    height: 10px;
+    width: 10px;
+    transform: translate(-40%, 30%) rotate(45deg);
+    border-bottom: transparent;
+    border-left: transparent;
+}
+
+.item-container {
+    width: 1750px;
+    height: 400px;
+}
+
+.item-container>div {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+    float: left;
+    margin: 50px;
+    padding: 0;
+}
+
+.item-container a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.section4 li img {
+    list-style-type: none;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-size: contain;
+}
+
+/*Part six Aktuellt*/
+.middle5 {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    height: 800px;
+}
+
+.middle5 h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-family: 'Verlag', sans-serif;
+    line-height: 1.4em;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.middle5 p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#img1 {
+    float: left;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 128px;
+    margin-right: 50px;
+    align-items: baseline;
+
+
+}
+
+#img2 {
+    float: left;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-left: 128px;
+    margin-right: 50px;
+    align-items: baseline;
+
+}
+
+.aktuell h3 {
+    font-size: 25px;
+    text-align: left;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
+.aktuell a {
+    color: black;
+    text-decoration: none;
+}
+
+.aktuell p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 150px;
+}
